@@ -3,282 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabricio Samuel Ticona Nuñonca - Mi Página Personal</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            border-radius: 0 0 10px 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-        }
-        
-        h1 {
-            font-size: 2.8rem;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        .profile-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin-bottom: 40px;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-        
-        .photo-container {
-            flex: 1;
-            min-width: 250px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .profile-photo {
-            width: 100%;
-            max-width: 300px;
-            height: 300px;
-            border-radius: 10px;
-            background-color: #e9ecef;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        
-        .profile-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .info-container {
-            flex: 2;
-            min-width: 300px;
-        }
-        
-        h2 {
-            color: #2575fc;
-            margin: 25px 0 15px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #e9ecef;
-            font-size: 1.8rem;
-        }
-        
-        h3 {
-            color: #495057;
-            margin: 20px 0 10px;
-            font-size: 1.4rem;
-        }
-        
-        p {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-        
-        ul {
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-        
-        li {
-            margin-bottom: 8px;
-            font-size: 1.1rem;
-        }
-        
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
-        }
-        
-        .links-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-        
-        .link-item {
-            background: #f8f9fa;
-            padding: 12px 15px;
-            border-radius: 8px;
-            border-left: 4px solid #2575fc;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        
-        .link-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .link-item a {
-            color: #2575fc;
-            text-decoration: none;
-            font-weight: 500;
-            display: block;
-        }
-        
-        .link-item a:hover {
-            text-decoration: underline;
-        }
-        
-        .contact-info {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #28a745;
-            margin: 15px 0;
-        }
-        
-        .contact-info p {
-            margin-bottom: 8px;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            color: #6c757d;
-            border-top: 1px solid #dee2e6;
-        }
-        
-        @media (max-width: 768px) {
-            .profile-section {
-                flex-direction: column;
-            }
-            
-            h1 {
-                font-size: 2.2rem;
-            }
-            
-            .links-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Fabricio Samuel Ticona Nuñonca</h1>
-            <p class="subtitle">Estudiante de Ciencia de la Computación - UCSP</p>
-        </div>
-    </header>
+    <title>Fabricio Samuel Ticona Nuñonca - Página Personal</title>
     
-    <div class="container">
-        <section class="profile-section">
-            <div class="photo-container">
-                <div class="profile-photo">
-                    <img src="foto-fabrico.jpg" alt="Fabricio Samuel Ticona Nuñonca">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#312e81',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <div>
+        <header class="bg-gradient-to-r from-brand-900 via-brand-700 to-indigo-600 text-white shadow-lg">
+            <div class="max-w-6xl mx-auto px-4 py-12 text-center md:text-left md:flex md:items-center md:justify-between">
+                <div>
+                    <h1 class="text-3xl md:text-5xl font-bold tracking-tight">Fabricio Samuel Ticona Nuñonca</h1>
+                    <p class="text-indigo-200 mt-2 text-lg md:text-xl font-light">Estudiante de Ciencia de la Computación — UCSP</p>
+                </div>
+                <div class="mt-6 md:mt-0 flex justify-center gap-3">
+                    <a href="mailto:fabricio.ticona@ucsp.edu.pe" class="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-lg text-sm font-medium transition backdrop-blur-sm border border-white/20 flex items-center gap-2">
+                        <i class="fa-solid fa-envelope"></i> Contactar
+                    </a>
+                    <a href="https://www.linkedin.com/in/fabricio-samuel-ticona-nu%C3%B1onca-14b713385/" target="_blank" class="bg-indigo-500 hover:bg-indigo-400 text-white px-4 py-2 rounded-lg text-sm font-medium transition shadow-sm flex items-center gap-2">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
                 </div>
             </div>
-            
-            <div class="info-container">
-                <h2>Sobre Mí</h2>
-                <p>Mi nombre es <strong>Fabricio Samuel Ticona Nuñonca</strong>. Tengo 18 años y actualmente estudio la carrera de Ciencia de la Computación en la UCSP (Universidad Católica San Pablo).</p>
-                
-                <h3>Sobre mi Carrera</h3>
-                <p>La <strong>Ciencia de la Computación</strong> me permite combinar mi pasión por las 
-                matemáticas con mi amor por los videojuegos. Cada línea de código representa 
-                un nuevo desafío donde puedo aplicar conceptos matemáticos complejos para crear 
-                experiencias interactivas y divertidas. Me emociona especialmente cómo la lógica 
-                y algoritmos se transforman en mundos virtuales fascinantes.</p>
-                
-                <h2>Estudios Actuales</h2>
-                <p>Estoy cursando actualmente mi <strong>2do semestre</strong> en la UCSP. Los cursos que estoy llevando este semestre son:</p>
-                <ul>
-                    <li>Ciencia de la Computación</li>
-                    <li>Estructuras Discretas</li>
-                    <li>Introducción a la Filosofia</li>
-                    <li>Introducción de Ciencia de la Computación</li>
-                    <li>Apreciacion Literaria</li>
-                </ul>
-                
-                <h3>Sobre el curso de Introducción de Ciencia de la Computación</h3>
-                <p>Este curso me parece muy interesante, ya que las clases son con estudiantes de 4 carreras universitarias diferentes y nunca había llevado un curso así. Me está permitiendo ampliar mis perspectivas y conocer diferentes enfoques de pensamiento.</p>
-            </div>
-        </section>
-        
-        <section class="card">
-            <h2>Intereses</h2>
-            <p>Mis principales intereses en el campo de la tecnología:</p>
-            <ul>
-                <li><strong>Programación básica:</strong> Aprender los fundamentos de la programación y crear mis primeros proyectos</li>
-                <li><strong>Desarrollo web:</strong> Crear páginas web y aprender HTML, CSS y JavaScript</li>
-                <li><strong>Videojuegos simples:</strong> Desarrollar juegos básicos y entender su lógica</li>
-                <li><strong>Resolución de problemas:</strong> Aplicar la lógica para resolver desafíos de programación</li>
-            </ul>
-            <p>También me interesa el diseño gráfico, la música y seguir aprendiendo sobre nuevas tecnologías.</p>
-        </section>
-        
-        <section class="card">
-            <h2>Compañeros de Clase</h2>
-            <p>Estos son algunos de mis compañeros en el curso de Introducción de Ciencia de la Computación:</p>
-            <div class="links-grid">
-                <div class="link-item">ZORBA CALLATA <a href="https://zorba207.github.io/">enlace</a></div>
-                <div class="link-item">DIEGO BELZU <a href="#">enlace</a></div>
-                <div class="link-item">JUAN CATERIANO <a href="#">enlace</a></div>
-                <div class="link-item">FABRICIO GAMARRA<a href="#">enlace</a></div>
-                <div class="link-item">JUSTO CRUZ<a href="#">enlace</a></div>
-            </div>
-        </section>
-        
-        <section class="card">
-            <h2>Enlaces de LinkedIn</h2>
-            <p>Perfiles profesionales en LinkedIn:</p>
-            <div class="links-grid">
-                
-                <div class="link-item">Docente:QUISPE ZAVALA ROSMERY VIOLETA  <a href="https://www.linkedin.com/in/rosmery-violeta-quispe-zavala-58374638/">enlace</a></div>
-                <div class="link-item">Docente:CUADROS VARGAS - ERNESTO <a href="https://www.linkedin.com/in/ecuadrosv/">enlace</a></div>
-                <div class="link-item">Docente:VIZCONDE LA MOTTA KELLY  <a href="https://www.linkedin.com/in/kelly-vizconde-la-motta-3a57a4143/">enlace</a></div>
-                <div class="link-item">Docente:LACUNZA MURILLO FERNANDO ALBERTO <a href="https://www.linkedin.com/in/fernando-alberto-lacunza-murillo-604580220/">enlace</a></div>
-            </div>
-        </section>
-        
-        <section class="card">
-            <h2>Contacto</h2>
-            <div class="contact-info">
-                <p><strong>Correo electrónico:</strong> <a href="mailto:fabricio.ticona@ucsp.edu.pe">fabricio.ticona@ucsp.edu.pe</a></p>
-                <p><strong>Teléfono:</strong> +51 974 720 270</p>
-                <p><strong>LinkedIn::</strong> <a href="https://www.linkedin.com/in/fabricio-samuel-ticona-nu%C3%B1onca-14b713385/">enlace</a></p>
-            </div>
-        </section>
-    </div>
-    
-</body>
-</html>
+        </header>
+
+        <main class="max-w-6xl mx-auto px-4 py-10 space-y-10">
+
+            <section class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-100 grid md:grid-cols-3 gap-8 items-start">
+                <div class="flex flex-col items-center">
+                    <div class="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden shadow-md border-4 border-slate-50 bg-slate-100 flex items-center justify-center text-slate-400 relative group">
+                        <img src="foto-fabrico.jpg" alt="Fabricio Samuel Ticona Nuñonca" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Fabricio+Ticona&background=6366f1&color=fff&size=256';">
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-2 text-brand-600 font-semibold text-sm uppercase tracking-wider">
+                        <i class="fa-solid fa-user-astronaut"></i> Sobre Mí
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-lg">
+                        Mi nombre es <strong class="text-slate-900 font-semibold">Fabricio Samuel Ticona Nuñonca</strong>. Tengo 18 años y actualmente curso la carrera de <strong class="text-brand-600 font-semibold">Ciencia de la Computación</strong> en la Universidad Católica San Pablo (UCSP).
+                    </p>
+
+                    <div class="pt-2">
+                        <h3 class="text-md font-semibold text-slate-800 flex items-center gap-2 mb-2">
+                            <i class="fa-solid fa-gamepad text-brand-500"></i> Pasión por el Desarrollo & Matemáticas
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            La Ciencia de la Computación me permite combinar mi pasión por las matemáticas con mi gusto por los videojuegos. Cada línea de código representa un nuevo desafío donde puedo aplicar conceptos matemáticos y lógica para construir proyectos interactivos.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-100 space-y-6">
+                <div class="border-b border-slate-100 pb-4">
+                    <h2 class="text-2xl font-bold text-slate-800 flex items-center gap-3">
+                        <i class="fa-solid fa-graduation-cap text-brand-600"></i> Detalle de Cursos Actuales
+                    </h2>
+                    <p class="text-slate-500 text-sm mt-1">Asignaturas correspondientes al plan de estudios actual en la UCSP</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 hover:border-brand-200 transition">
+                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-brand-50 text-brand-700">Cód: 280</span>
+                        <h3 class="font-bold text-slate-800 mt-2">Comunicación I</h3>
+                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-layer-group"></i> Nivel 1 • 2 Créditos</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 hover:border-brand-200 transition">
+                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-brand-50 text-brand-700">Cód: 4614</span>
+                        <h3 class="font-bold text-slate-800 mt-2">Lógica</h3>
+                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-layer-group"></i> Nivel 1 • 2 Créditos</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 hover:border-brand-200 transition">
+                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-brand-50 text-brand-700">Cód: 4962</span>
+                        <h3 class="font-bold text-slate-800 mt-2">Fundamentos de Programación</h3>
+                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-layer-group"></i> Nivel 1 • 5 Créditos</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 hover:border-brand-200 transition">
+                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-brand-50 text-brand-700">Cód: 4963</span>
+                        <h3 class="font-bold text-slate-800 mt-2">Fundamentos Matemáticos para Computación</h3>
+                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-layer-group"></i> Nivel 1 • 6 Créditos</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 hover:border-brand-200 transition">
+                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-brand-50 text-brand-700">Cód: 4964</span>
+                        <h3 class="font-bold text-slate-800 mt-2">Introducción a Computación</h3>
+                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-layer-group"></i> Nivel 1 • 3 Créditos</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl border border-slate-100 bg-slate-50/50 hover:border-brand-200 transition">
+                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-brand-50 text-brand-700">Cód: 2371</span>
+                        <h3 class="font-bold text-slate-800 mt-2">Introducción a la Vida Universitaria</h3>
+                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-layer-group"></i> Nivel 1 • 3 Créditos</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-100 space-y-6">
+                <div class="border-b border-slate-100 pb-4">
+                    <h2 class="text-2xl font-bold text-slate-800 flex items-center gap-3">
+                        <i class="fa-solid fa-code text-blue-500"></i> Entorno de Desarrollo (IDE)
+                    </h2>
+                    <p class="text-slate-500 text-sm mt-1">Editor de código principal utilizado para desarrollo y práctica diaria</p>
+                </div>
+
+                <div class="p-5 rounded-xl bg-slate-900 text-slate-100 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                    <div class="space-y-2">
+                        <a href="https://code.visualstudio.com/" target="_blank" class="text-xl font-bold text-blue-400 hover:underline flex items-center gap-2">
+                            <i class="fa-brands fa-microsoft"></i> Visual Studio Code
+                        </a>
+                        <p class="text-slate-300 text-sm leading-relaxed max-w-2xl">
+                            Mi entorno predeterminado para escribir scripts en Python, código C++ y desarrollo web. Cuenta con integración para Git, depuración y extensiones de desarrollo.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-2 rounded-lg border border-slate-700 transition">Extensión Python</a>
+                        <a href="
